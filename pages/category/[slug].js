@@ -104,7 +104,6 @@ export async function getStaticPaths() {
       fallback: false,
   };
 }
-
 // `getStaticPaths` requires using `getStaticProps`
 export async function getStaticProps({ params: { slug } }) {
   const category = await fetchDataFromApi(
