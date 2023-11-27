@@ -24,7 +24,7 @@ export const ProductCard = ({data:{attributes: p, id}}) => {
                     </p>
                     {p.original && (
                         <>
-                            <p className="text-base  font-medium line-through">
+                            <p className="text-base font-medium line-through">
                                 &#8377;{p.original}
                             </p>
                             <p className="ml-auto text-base font-medium text-green-500">

@@ -101,7 +101,7 @@ export async function getStaticPaths() {
 
   return {
       paths,
-      fallback: false,
+      fallback: false,//it execute while all path getstaticprops return so it can't go infinite loop
   };
 }
 // `getStaticPaths` requires using `getStaticProps`

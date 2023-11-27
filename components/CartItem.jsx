@@ -49,7 +49,7 @@ const CartItem = ({data}) => {
                     </div>
                 </div>
 
-                {/* PRODUCT SUBTITLE */}
+                {/* PRODUCT SUBTITLE for desktop*/}
                 <div className="text-md font-medium text-black/[0.5] hidden md:block">
                 {p.subtitle}
                 </div>
@@ -73,7 +73,7 @@ const CartItem = ({data}) => {
                                             disabled={
                                                 !item.enabled ? true : false
                                             }
-                                            defaultValue={
+                                            selected={
                                                 data.selectedSize === item.size
                                             }
                                         >
@@ -111,7 +111,7 @@ const CartItem = ({data}) => {
                                         <option
                                             key={i}
                                             value={q}
-                                            defaultValue={data.quantity === q}
+                                            selected={data.quantity === q}
                                         >
                                             {q}
                                         </option>

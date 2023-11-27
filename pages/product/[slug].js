@@ -217,7 +217,13 @@ const ProductDetails = ({product,products}) => {
                                 Product Details
                             </div>
                             <div className="markdown text-md mb-5">
-                                <ReactMarkdown>{p.description}</ReactMarkdown>
+                                <ReactMarkdown>{p.description?.[0].children?.[0].text}</ReactMarkdown>
+                            </div>
+                            <div className="markdown text-md font-bold mb-5">
+                                <ReactMarkdown>{p.description?.[2].children?.[0].text}</ReactMarkdown>
+                            </div>
+                            <div className="markdown text-md font-bold mb-5">
+                                <ReactMarkdown>{p.description?.[3].children?.[0].text}</ReactMarkdown>
                             </div>
                         </div>
                     </div>
